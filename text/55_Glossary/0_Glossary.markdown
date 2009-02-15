@@ -1,4 +1,4 @@
-## Glossary ##
+## Glossário ##
 
 Here we have the meanings of some terms used into Git context.  
 These terms were entirely copied from 
@@ -9,7 +9,7 @@ _alternate object database_
 
 >   Via the alternates mechanism, a repository
     can inherit part of its object database
-    from another object database, which is called "alternate". 
+    from another object database, which é called "alternate". 
 
 _bare repository_
 
