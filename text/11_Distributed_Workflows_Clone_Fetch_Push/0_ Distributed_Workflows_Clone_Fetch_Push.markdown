@@ -106,7 +106,6 @@ linkgit:gitcvs-migration[1].
 
 ### Repositórios Git Públicos ###
 
-<<<<<<< HEAD:text/11_Distributed_Workflows_Clone_Fetch_Push/0_ Distributed_Workflows_Clone_Fetch_Push.markdown
 Uma outra forma de enviar alterações para um projeto é informar ao responsável 
 por aquele projeto para realizar um pull das alterações de seu repositório 
 usando linkgit:git-pull[1]. Essa é uma forma de conseguir atualizações do 
