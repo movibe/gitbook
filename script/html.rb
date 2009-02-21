@@ -111,10 +111,10 @@ task :html => :merge do
       File.open(File.join(html_dir, chapter_file), 'w') do |f|
         nav = ''
         if (cf = chapter_files[index - 1]) && index != 0
-          nav += "<a href=\"#{cf[1]}\">Prev</a> "
+          nav += "<a href=\"#{cf[1]}\">Anterior</a> "
         end
         if cf = chapter_files[index + 1]
-          nav += " <a href=\"#{cf[1]}\">Next</a>"
+          nav += " <a href=\"#{cf[1]}\">Próximo</a>"
         end
         html_template = File.new("layout/chapter_template.html").read
         html_template.gsub!("#title", chapter_title)
