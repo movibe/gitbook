@@ -1,4 +1,4 @@
-﻿## Git Hooks ## 
+﻿## Git Hooks ##
 
 Hooks são pequenos scripts que você pode colocar no diretório GIT_DIR/hooks
 para disparar um ação em certos pontos. Quando git-init é executado, uns
