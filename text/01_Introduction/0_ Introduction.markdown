@@ -38,7 +38,7 @@ aprender como funcionam os protocolos e funções internas no Git.
 ### Comentários e Contribuições ###
 
 Até aqui, se você achou algum erro ou quer contribuir com o livro, você
-pode enviar um email para [schacon@gmail.com](mailto://schacon@gmail.com), ou
+pode enviar um email para [schacon@gmail.com](mailto:schacon@gmail.com), ou
 pode clonar o código-fonte deste livro em
 [http://github.com/schacon/gitbook](http://github.com/schacon/gitbook) e me
 enviar um patch ou pull-request.
@@ -54,12 +54,12 @@ e enviar um pull-request quando fizer alguma alteração.
 
 Aqui a lista de colaboradores que ajudaram/ajudam no desenvolvimento desta versão.  
 
-* Djalma Oliveira [djalmaoliveira@gmail.com](mailto://djalmaoliveira@gmail.com) no Github [http://github.com/djalmaoliveira/gitbook](http://github.com/djalmaoliveira/gitbook).  
-* Enderson Maia [endersonmaia@gmail.com](mailto://endersonmaia@gmail.com)  no Github [http://github.com/enderson/gitbook](http://github.com/enderson/gitbook).  
+* Djalma Oliveira [djalmaoliveira@gmail.com](mailto:djalmaoliveira@gmail.com) no Github [http://github.com/djalmaoliveira/gitbook](http://github.com/djalmaoliveira/gitbook).  
+* Enderson Maia [endersonmaia@gmail.com](mailto:endersonmaia@gmail.com)  no Github [http://github.com/enderson/gitbook](http://github.com/enderson/gitbook).  
 
 
 ### Referências ###
-Muitos dos conteúdos desse livro é extraído de diferentes fontes e então
+Muitos dos conteúdos desse livro foram extraídos de diferentes fontes e então
 adicionados.
 Se você gostaria de ler sobre alguns dos artigos originais ou recursos, por
 favor visite eles e agradeça os autores.
