@@ -1,24 +1,24 @@
-== The Community Git Book ==
+== O Livro da Comunidade Git ==
 
-This is an attempt to make a comprehensive, easy to follow Git learning
-resource to be hosted on the main Git website.
+Isso é uma tentativa de fazer-se compreensível e fácil de seguir o aprendizado dos 
+recursos do Git hospedado sobre o principal site Git. (precisa de revisão)
 
-== Contributing ==
+== Contribuindo ==
 
-* Clone this source, add to it and send me (schacon@gmail.com) a patch or pull request
-* Install required gems:
+* Clone esses fontes, adicione coisas a ele e envie-me (schacon@gmail.com) um patch ou pull request
+* Instalação dos gems necessários
     $ gem install rake ultraviolet discount rdiscount builder
-* For PDF output install prince (http://www.princexml.com/download/)
-* Generate book through
+* Para versão PDF instale prince (http://www.princexml.com/download/)
+* Gere o livro através do :
     $ rake html
-  or
+  ou
     $ rake pdf
 
-== References ==
+== Referências ==
 
-* A bunch of the scripts for building and such from the Rails 2.1 book by Carlos Brando
+* Um grupo de scripts para construção e retirado do livro Rails 2.1 de Carlos Brando
 
-== Authors ==
+== Autores ==
 
 * Scott Chacon
 * Emil Sit
