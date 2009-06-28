@@ -41,7 +41,7 @@ Até aqui, se você achou algum erro ou quer contribuir com o livro, você
 pode enviar um email para [schacon@gmail.com](mailto:schacon@gmail.com), ou
 pode clonar o código-fonte deste livro em
 [http://github.com/schacon/gitbook](http://github.com/schacon/gitbook) e me
-enviar um patch ou pull-request.
+enviar um patch ou um pull-request.
 
 ### Comentários e Contribuições sobre a versão Brasileira ###
 
