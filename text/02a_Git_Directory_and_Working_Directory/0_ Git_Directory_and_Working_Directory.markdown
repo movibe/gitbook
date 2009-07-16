@@ -3,7 +3,7 @@
 ### O Diretório Git ###
 
 O 'diretório git' é o diretório que armazena todos os históricos Git e meta
-informações do seu projeto - incluindo todos os objetos (commits, trees,blobs,
+informações do seu projeto - incluindo todos os objetos (commits, trees, blobs,
 tags), todos os ponteiros onde os diferentes branches estão e muito mais.
 
 Existe somente um Diretório Git por projeto (o oposto de um por sub diretório
