@@ -1,7 +1,7 @@
 ## Glossário ##
 
 Aqui nós temos o significado de alguns termos usados dentro do contexto do Git.  
-Esses termos foram copiados do
+Esses termos foram retirados do
 [Git Glossary](http://www.kernel.org/pub/software/scm/git/docs/gitglossary.html).  
 
 
@@ -29,15 +29,12 @@ _blob object_
 
 _branch_
 
-> A "branch" is an active line of development.  The most recent
-commit on a branch is referred to as the tip of
-that branch.  The tip of the branch is referenced by a branch
-head, which moves forward as additional development
-is done on the branch.  A single git
-repository can track an arbitrary number of
-branches, but your working tree is
-associated with just one of them (the "current" or "checked out"
-branch), and HEAD points to that branch.
+> Um "branch" é uma linha ativa de desenvolvimento. O commit mais recente sobre
+um branch é referenciado como o ponto mais alto naquele branch. Esse ponto é
+refenciado por um HEAD, no qual é movido para cima quando algum desenvolvimento
+adicional é feito sobre ele. Um simples repositório do git pode conter um  número
+arbitrário de branches, mas sua arvóre de trabalho é associada somente a um deles
+(o branch "atual" ou "corrente"), e o HEAD aponta para aquele branch.
 
 _cache_
 
@@ -57,12 +54,12 @@ store changes, but states, it really does not make sense to use the term
 
 _checkout_
 
-> The action of updating all or part of the
-working tree with a tree object
-or blob from the
-object database, and updating the
-index and HEAD if the whole working tree has
-been pointed at a new branch.
+> A ação de atualizar todo ou parte da
+árvore de trabalho com um objeto tree
+ou blob do banco de dados de objetos,
+e atualizar o index e o HEAD se
+a árvore de trabalho inteira tem sido apontada
+para um novo branch.
 
 _cherry-picking_
 
@@ -93,13 +90,13 @@ state in the git history, by creating a new commit representing the current
 state of the index and advancing HEAD
 to point at the new commit.
 
-_commit object_
+_objeto commit_
 
-> An object which contains the information about a
-particular revision, such as parents, committer,
-author, date and the tree object which corresponds
-to the top directory of the stored
-revision.
+> Um objeto que contém a informação sobre uma
+revisão particular, como os pais, quem criou o commit ('committer'),
+autor, data  e o objeto tree que corresponde
+ao topo do diretório da revisão
+armazenada.
 
 _core git_
 
@@ -191,7 +188,7 @@ created. Configured via the `.git/info/grafts` file.
 
 _hash_
 
-> In git's context, synonym to object name.
+> No contexto do Git, é sinônimo para o nome do objeto.
 
 _head_
 
@@ -224,11 +221,11 @@ of git you had to make them executable.
 
 _index_
 
-> A collection of files with stat information, whose contents are stored
-as objects. The index is a stored version of your
-working tree. Truth be told, it can also contain a second, and even
-a third version of a working tree, which are used
-when merging.
+> Uma coleção de arquivos com informações de estado, no qual os conteúdos são
+armazenados como objetos. O index é uma versão armazenada de sua árvore de trabalho.
+Verdade seja dita, ele também pode conter uma segunda, e até mesmo uma terceira
+versão da árvore de trabalho, que são usadas
+quando realizam algum merge.
 
 _index entry_
 
@@ -239,11 +236,11 @@ the index contains multiple versions of that file).
 
 _master_
 
-> The default development branch. Whenever you
-create a git repository, a branch named
-"master" is created, and becomes the active branch. In most
-cases, this contains the local development, though that is
-purely by convention and is not required.
+> O branch padrão de desenvolvimento.
+Sempre que você cria um repositório git, 
+um branch nomeado de "master" é criado, e se torna o branch ativo.
+Na maioria dos casos, ele contém os arquivos de desenvolvimento local,
+embora ele seja uma convenção e não seja necessário.
 
 _merge_
 
@@ -269,31 +266,31 @@ This commit is referred to as a "merge commit", or sometimes just a
 
 _object_
 
-> The unit of storage in git. It is uniquely identified by the
-SHA1> of its contents. Consequently, an
-object can not be changed.
+> A unidade de armazenamento no git. Ele é unicamente identificado pelo 
+SHA1 de seu conteúdo. Consequentemente, um
+objeto não pode ser modificado.
 
-_object database_
+_banco de dados de objetos_
 
-> Stores a set of "objects", and an individual object is
-identified by its object name. The objects usually
-live in `$GIT_DIR/objects/`.
+> Armazena um conjunto de "objetos", e um objeto individual é identificado por
+seu nome de objeto. Os objetos normalmente 
+ficam em `$GIT_DIR/objects/`.
 
-_object identifier_
+_identificador do objeto_
 
-> Synonym for object name.
+> Sinônimo para nome de objeto.
 
-_object name_
+_nome do objeto_
 
-> The unique identifier of an object. The hash
-of the object's contents using the Secure Hash Algorithm
-1 and usually represented by the 40 character hexadecimal encoding of
-the hash of the object.
+> O único identificador de um objeto. O hash do conteúdo de um objeto 
+usa o "Secure Hash Algorithm 1" e normalmente 
+é representado por uma codificação
+de 40 caracteres hexadecimais do hash de um objeto.
 
-_object type_
+_tipo de objeto_
 
-> One of the identifiers "commit", "tree", "tag" or "blob" describing the 
-type of an object.
+> Um dos identificadores "commit", "tree", "tag" ou "blob" descrevendo o tipo
+de um objeto.
 
 _octopus_
 
@@ -418,8 +415,8 @@ via alternates mechanism.
 
 _resolve_
 
-> The action of fixing up manually what a failed automatic
-merge left behind.
+> A ação de corrgir manualmente uma falha que um merge automático
+causou.
 
 _revision_
 
