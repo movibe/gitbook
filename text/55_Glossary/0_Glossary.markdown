@@ -13,19 +13,17 @@ from another object database, which is called "alternate".
 
 _bare repository_
 
-> A bare repository is normally an appropriately
-named directory with a `.git` suffix that does not
-have a locally checked-out copy of any of the files under
-revision control. That is, all of the `git`
-administrative and control files that would normally be present in the
-hidden `.git` sub-directory are directly present in the
-`repository.git` directory instead,
-and no other files are present and checked out. Usually publishers of
-public repositories make bare repositories available.
+> Um repositório bare é normalmente um nome apropriado para um diretório com um 
+sufixo `.git` que não possui um cópia (checkout) local de qualquer arquivo sobre 
+o controle de revisão. Então, todos os arquivos administrativos e de controle do 
+`git` que normalmente estariam no sub-diretório escondido `.git` estão presentes
+diretamente no diretório `repository.git` por exemplo, e nenhum outro arquivo
+presente ou checkout. Normalmente publicadores de repositórios públicos tornam 
+diretórios bare disponíveis.
 
-_blob object_
+_objeto blob_
 
-> Untyped object, e.g. the contents of a file.
+> Objeto sem tipo, o conteúdo de um arquivo.
 
 _branch_
 
@@ -38,7 +36,7 @@ arbitrário de branches, mas sua arvóre de trabalho é associada somente a um d
 
 _cache_
 
-> Obsolete for: index.
+> Termo obsoleto para: index.
 
 _chain_
     
@@ -308,8 +306,8 @@ origin/name-of-upstream-branch, which you can see using
 
 _pack_
 
-> A set of objects which have been compressed into one file (to save space
-or to transmit them efficiently).
+> Um conjunto de objetos no qual foram comprimidos em um arquivo (para
+economizar espeço ou transmiti-los com eficiência).
 
 _pack index_
 
@@ -344,8 +342,8 @@ interface than the plumbing.
 
 _pull_
 
-> Pulling a branch means to fetch it and
-merge it.  See also linkgit:git-pull[1].
+> Pulling um branch significa recuperá-lo e realizar um merge nele.
+Veja também linkgit:git-pull[1].
 
 _push_
 
@@ -379,8 +377,8 @@ to the result.
 
 _ref_
 
-> A 40-byte hex representation of a SHA1 or a name that
-denotes a particular object. These may be stored in
+> Uma representação hexadecimal de 40 bytes de um SHA1 ou um nome que 
+denota um objeto particular. Esses podem ser armazenados em
 `$GIT_DIR/refs/`.
 
 _reflog_
@@ -415,14 +413,14 @@ via alternates mechanism.
 
 _resolve_
 
-> A ação de corrgir manualmente uma falha que um merge automático
+> A ação de corrigir manualmente uma falha que um merge automático
 causou.
 
 _revision_
 
-> A particular state of files and directories which was stored in the
-object database. It is referenced by a
-commit object.
+> Um estado particular dos arquivos e diretórios no qual estão armazenados no
+banco de dados de objetos. 
+Ele é referenciado por um objeto commit.
 
 _rewind_
 
@@ -431,11 +429,11 @@ head to an earlier revision.
 
 _SCM_
 
-> Source code management (tool).
+> Gerenciador de código fonte (ferramenta).
 
 _SHA1_
 
-> Synonym for object name.
+> Sinônimo para um nome de objeto.
 
 _shallow repository_
 
@@ -495,14 +493,14 @@ refspec.
 
 _tree_
 
-> Either a working tree, or a tree object together with the dependent 
-blob and tree objects (i.e. a stored representation of a working tree).
+> Qualquer árvore de trabalho, ou uma árvore de objetos juntas com
+objetos blob e tree dependentes (ex.: uma representação armazenada de uma árvore de trabalho).
 
-_tree object_
+_objeto tree_
 
-> An object containing a list of file names and modes along
-with refs to the associated blob and/or tree objects. A
-tree is equivalent to a directory.
+> Um objeto contendo uma lista de nomes de arquivos e seus modos de acesso com
+refs para um blob associado e/ou objetos tree.
+Uma tree é equivalente a um diretório.
 
 _tree-ish_
 
@@ -514,10 +512,10 @@ _unmerged index_
 > An index which contains unmerged
 index entries.
 
-_unreachable object_
+_objeto inalcançável_
 
-> An object which is not reachable from a
-branch, tag, or any other reference.
+> Um objeto no qual não é atingível a partir de um branch, tag,
+ou qualquer outra referência.
 
 _working tree_
 
