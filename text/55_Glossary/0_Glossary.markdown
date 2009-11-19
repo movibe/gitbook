@@ -40,15 +40,15 @@ _cache_
 
 _chain_
     
-> A list of objects, where each object in the list contains
-a reference to its successor (for example, the successor of a
-commit could be one of its parents).
+> Uma lista de objetos, onde cada objeto em uma lista contém a referência para 
+o seu sucessor (por exemplo, o sucessor de um commit poderia ser um dos seus
+pais).
 
 _changeset_
 
-> BitKeeper/cvsps speak for "commit". Since git does not
-store changes, but states, it really does not make sense to use the term
-"changesets" with git.
+> Forma como BitKeeper/cvsps chama um "commit". Uma vez que o git não armazena 
+mudanças, mas estados, realmente não faz sentido usar o termo "changesets" com 
+o git.
 
 _checkout_
 
@@ -70,23 +70,20 @@ of the current branch as a new commit.
 
 _clean_
 
-> A working tree is clean, if it
-corresponds to the revision referenced by the current
-head. Also see "dirty".
+> Um diretório de trabalho está limpo, se ele corresponde a revisão referenciada
+pelo head atual. Veja também "dirty". 
 
 _commit_
 
-> As a noun: A single point in the
-git history; the entire history of a project is represented as a
-set of interrelated commits.  The word "commit" is often
-used by git in the same places other revision control systems
-use the words "revision" or "version".  Also used as a short
-hand for commit object.
+> Como um substantivo: Um simples ponto no histórico do git; o histórico completo 
+do projeto é representado como um conjunto de commits inter-relacionados. A 
+palavra "commit" é frequentemente usada pelo git nos mesmos locais onde outros
+sistemas de controle de revisão usam as palavras "revisão" or "versão". Também
+usado como atalho para um objeto tipo commit.
 
-> As a verb: The action of storing a new snapshot of the project's
-state in the git history, by creating a new commit representing the current
-state of the index and advancing HEAD
-to point at the new commit.
+> Como um verbo: A ação de armazenar um novo "ponto" do estado do projeto no 
+histórico do git, através da criação de um novo commit representando o estado 
+atual do index e avançando o HEAD para o ponto do novo commit.
 
 _objeto commit_
 
@@ -128,13 +125,12 @@ _dircache_
 
 _directory_
 
-> The list you get with "ls" :-)
+> A lista você consegue com um "ls" :-)
 
 _dirty_
 
-> A working tree is said to be "dirty" if
-it contains modifications which have not been committed to the current
-branch.
+> Um diretório de trabalho é dito estar "sujo" se ele contém modificações que 
+não tem sido commitados no branch atual.
 
 _ent_
 
@@ -144,8 +140,8 @@ explanation. Avoid this term, not to confuse people.
 
 _evil merge_
 
-> An evil merge is a merge that introduces changes that
-do not appear in any parent.
+> Um merge "infernal" é um merge que introduz modificações que não aparecem em
+qualquer pai.
 
 _fast forward_
 
@@ -168,13 +164,13 @@ and to get them, too.  See also linkgit:git-fetch[1].
 
 _file system_
 
-> Linus Torvalds originally designed git to be a user space file system,
-i.e. the infrastructure to hold files and directories. That ensured the
-efficiency and speed of git.
+> Linus Torvalds originalmente projetou o git para ser um sistema de arquivos no 
+espaço do usuário, exemplo da estrutura que mantém arquivos e diretórios. Que 
+garante a eficiência e velocidade do git.
 
 _git archive_
 
-> Synonym for repository (for arch people).
+> Sinônimo para repositório (para pessoas arcaicas).
 
 _grafts_
 
@@ -204,7 +200,7 @@ case it may	reference an arbitrary commit.
 
 _head ref_
 
-> A synonym for head.
+> Um sinônimo para head.
 
 _hook_
 
