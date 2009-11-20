@@ -156,11 +156,9 @@ repository.
 
 _fetch_
 
-> Fetching a branch means to get the
-branch's head ref from a remote
-repository, to find out which objects are
-missing from the local object database,
-and to get them, too.  See also linkgit:git-fetch[1].
+> Realizar um fetch significa conseguir o head do branch do repositório remoto,
+procurar quais objetos estão faltando no banco de dados do repositório local, e
+recupera-los. Veja também: linkgit:git-fetch[1].
 
 _file system_
 
@@ -186,17 +184,16 @@ _hash_
 
 _head_
 
-> A named reference to the commit at the tip of a
-branch.  Heads are stored in
-`$GIT_DIR/refs/heads/`, except when using packed refs. (See
+> Uma referência nomeada para o commit no topo do branch. Heads são armazenados
+em `$GIT_DIR/refs/heads/`, exceto quando está usando `refs` comprimidos. (Veja 
 linkgit:git-pack-refs[1].)
 
 _HEAD_
 
-> The current branch.  In more detail: Your working tree is normally derived 
-from the state of the tree referred to by HEAD.  HEAD is a reference to one
-of the heads in your repository, except when using a detached HEAD, in which
-case it may	reference an arbitrary commit.
+> O branch atual. Em mais detalhes: Sua árvore de trabalho é normalmente
+derivado do estado da árvore referida pelo HEAD. HEAD é uma referência para um
+dos heads em seu repositório, exceto quando está usando um HEAD desacoplado, que 
+nesse caso ele pode referenciar um commit arbitrário.
 
 _head ref_
 
@@ -288,8 +285,8 @@ de um objeto.
 
 _octopus_
 
-> To merge more than two branches. Also denotes an
-intelligent predator.
+> Para realizar um merge com mais de dois branches. Também denota um predador 
+inteligente.
 
 _origin_
 
@@ -303,7 +300,7 @@ origin/name-of-upstream-branch, which you can see using
 _pack_
 
 > Um conjunto de objetos no qual foram comprimidos em um arquivo (para
-economizar espeço ou transmiti-los com eficiência).
+economizar espaço ou transmiti-los com eficiência).
 
 _pack index_
 
@@ -367,9 +364,8 @@ that they contain.
 
 _rebase_
 
-> To reapply a series of changes from a branch to a
-different base, and reset the head of that branch
-to the result.
+> Para reaplicar uma série de mudanças de um branch para uma diferente base, e 
+resetar o `head` desse branch para o resultado.
 
 _ref_
 
@@ -400,12 +396,10 @@ linkgit:git-push[1].
 
 _repository_
 
-> A collection of refs together with an
-object database containing all objects
-which are reachable from the refs, possibly
-accompanied by meta data from one or more porcelains. A
-repository can share an object database with other repositories
-via alternates mechanism.
+> Uma coleção de `refs` juntas em um banco de dados de objetos contendo todos os
+objetos que são alcançáveis pelo `refs`, possivelmente acompanhado por meta dados
+de um ou mais `porcelains`. Um repositório pode compartilhar um banco de dados de
+objetos com outros repositórios via mecanismos alternativos.
 
 _resolve_
 
@@ -465,10 +459,9 @@ commit ancestry chain.
 
 _tag object_
 
-> An object containing a ref pointing to
-another object, which can contain a message just like a
-commit object. It can also contain a (PGP)
-signature, in which case it is called a "signed tag object".
+> Um objeto contendo uma referência apontando para outro objeto, que pode conter
+uma mensagem como no objeto commit. Ele pode conter também uma assinatura (PGP),
+nesse caso ele é chamado de "objeto tag assinado".
 
 _topic branch_
 
@@ -505,8 +498,7 @@ object pointing to a tag or commit or tree object.
 
 _unmerged index_
 
-> An index which contains unmerged
-index entries.
+> Um index que contém entradas no qual ainda não foram realizadas num merge.
 
 _objeto inalcançável_
 
