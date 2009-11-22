@@ -60,7 +60,7 @@ Segundo as regras para a economia de espaço, Git utiliza o packfile. Esse é um
 formato onde o Git somente gravará a parte que foi alterada no segundo arquivo,
 com um apontador para o arquivo original.
 
-Quando os objetos são escritos no disco, frquentemente é no formato loose,
+Quando os objetos são escritos no disco, frequentemente é no formato loose,
 desde que o formato seja menos dispendioso para acessar. Contudo, finalmente
 você irá querer economizar espaço através do empacotamento dos objetos - isso
 é feito com o comando linkgit:git-gc[1]. Ele usará uma heurística bastante

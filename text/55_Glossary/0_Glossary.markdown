@@ -7,9 +7,9 @@ Esses termos foram retirados do
 
 _alternate object database_
 
-> Via the alternates mechanism, a repository
-can inherit part of its object database
-from another object database, which is called "alternate". 
+> Através de mecanismos alternativos, um repositório pode herdar parte de seus 
+objetos do banco de dados de outro banco de dados de objetos, que é chamado de 
+"alternate". 
 
 _bare repository_
 
@@ -61,12 +61,12 @@ para um novo branch.
 
 _cherry-picking_
 
-> In SCM jargon, "cherry pick" means to choose a subset of
-changes out of a series of changes (typically commits) and record them
-as a new series of changes on top of a different codebase. In GIT, this is
-performed by the "git cherry-pick" command to extract the change introduced
-by an existing commit and to record it based on the tip
-of the current branch as a new commit.
+> No jargão do SCM, "cherry pick" significa escolher um subconjunto de modificações
+fora da série de modificações (tipicamente commits) e gravá-las como um nova 
+série de mudanças no início de um base de código diferente. No GIT, ele é 
+realizado pelo comando `git cherry-pick` para extrair as modificações introduzidas
+por commit existente e gravá-las baseadas no início do branch atual como um novo
+commit.
 
 _clean_
 
@@ -95,37 +95,35 @@ armazenada.
 
 _core git_
 
-> Fundamental data structures and utilities of git. Exposes only limited
-source code management tools.
+> Estruturas de dados fundamentais e utilitários do git. Expoem somente limitadas
+ferramentas de gerenciamento de código fonte.
 
 _DAG_
 
-> Directed acyclic graph. The commit objects form a
-directed acyclic graph, because they have parents (directed), and the
-graph of commit objects is acyclic (there is no chain
-which begins and ends with the same object).
+> Gráfico acíclico direcionado. Os objetos commits formam um gráfico acíclico
+direcionado, por que eles tem pais (direcionados), e o gráfico dos objetos 
+commit é acíclico (existe nenhuma corrente que inicia e termina com o mesmo 
+objeto).
 
 _dangling object_
 
-> An unreachable object which is not
-reachable even from other unreachable objects; a
-dangling object has no references to it from any
-reference or object in the repository.
+> Um objeto inalcançável que não é alcançável mesmo de outro objeto inalcançável
+; um objeto "dangling" não tem referências para ele de qualquer outra referência
+ou objeto no repositório.
 
 _detached HEAD_
 
-> Normally the HEAD stores the name of a
-branch.  However, git also allows you to check out
-an arbitrary commit that isn't necessarily the tip of any
-particular branch.  In this case HEAD is said to be "detached".
+> Normalmente o HEAD armazena o nome de um branch. Contudo, git também permite
+você realizar um checkout de um commit arbitrário que não é necessariamente o 
+topo de um branch particular. Nesse caso o HEAD é dito como ser "isolado".
 
 _dircache_
 
-> You are *waaaaay* behind. See index.
+> Você está *muito* atrás. Veja index.
 
 _directory_
 
-> A lista você consegue com um "ls" :-)
+> A lista você consegue com um `ls` :-)
 
 _dirty_
 
@@ -134,9 +132,9 @@ não tem sido commitados no branch atual.
 
 _ent_
 
-> Favorite synonym to "tree-ish" by some total geeks. See
-`http://en.wikipedia.org/wiki/Ent_(Middle-earth)` for an in-depth
-explanation. Avoid this term, not to confuse people.
+> Sinônimo favorito para "tree-ish" para alguns geeks. Veja
+`http://en.wikipedia.org/wiki/Ent_(Middle-earth)` para uma explicação mais
+profunda. Evite este termo, para não confundir as pessoas.
 
 _evil merge_
 
@@ -145,14 +143,11 @@ qualquer pai.
 
 _fast forward_
 
-> A fast-forward is a special type of merge where you have a
-revision and you are "merging" another
-branch's changes that happen to be a descendant of what
-you have. In such these cases, you do not make a new merge
-commit but instead just update to his
-revision. This will happen frequently on a
-tracking branch of a remote
-repository.
+> Um "fast-forward" é um tipo especial de merge onde você tem uma revisão e
+realiza um merge com as modificações de outro branch que é descendente daquele que
+você já tem. Muitas vezes nesse caso, você não faz um novo merge, mas ao invés 
+disso só atualiza a sua revisão. Isso acontece frequentemente sobre um branch em 
+um repositório remoto.
 
 _fetch_
 
@@ -172,11 +167,11 @@ _git archive_
 
 _grafts_
 
-> Grafts enables two otherwise different lines of development to be joined
-together by recording fake ancestry information for commits. This way
-you can make git pretend the set of parents a commit has
-is different from what was recorded when the commit was
-created. Configured via the `.git/info/grafts` file.
+> Grafts habilitam duas outras linhas de desenvolvimento diferentes 
+para serem unidas juntas através da gravação de informações ancestrais falsas 
+para os commits. Dessa forma você pode fazer git fingir o conjunto de pais que 
+o commit possui sendo diferente daquele que foi gravado quando o commit foi 
+criado. Configurado no arquivo `.git/info/grafts`.
 
 _hash_
 
@@ -201,14 +196,14 @@ _head ref_
 
 _hook_
 
-> During the normal execution of several git commands, call-outs are made
-to optional scripts that allow a developer to add functionality or
-checking. Typically, the hooks allow for a command to be pre-verified
-and potentially aborted, and allow for a post-notification after the
-operation is done. The hook scripts are found in the
-`$GIT_DIR/hooks/` directory, and are enabled by simply
-removing the `.sample` suffix from the filename. In earlier versions
-of git you had to make them executable.
+> Durante a execução normal de diversos comandos git, chamadas são feitas para 
+scripts opcionais que permitem o desenvolvedor adicionar ou verificar 
+funcionalidades. Tipicamente, os hooks permitem um comando ser 
+pré-verificado e potencialmente abortado, e permitir que uma notificação seja 
+lançada depois que a operação tenha sido feita. Os scripts são encontrados no 
+diretório `$GIT_DIR/hooks/`, e são habilitados através da simples remoção do 
+sufixo `.sample` nos nomes dos arquivos. Em versão mais antigas do git você tinha
+que torná-los executáveis.
 
 _index_
 
@@ -220,10 +215,9 @@ quando realizam algum merge.
 
 _index entry_
 
-> The information regarding a particular file, stored in the
-index. An index entry can be unmerged, if a
-merge was started, but not yet finished (i.e. if
-the index contains multiple versions of that file).
+> Uma informação relativa a um arquivo particular, armazenado no index. Uma 
+entrada no index pode estar "umerged", se um merge foi iniciado, mas ainda não 
+finalizado (ex.: se o index contém múltiplas versões daquele arquivo).
 
 _master_
 
@@ -235,25 +229,20 @@ embora ele seja uma convenção e não seja necessário.
 
 _merge_
 
-> As a verb: To bring the contents of another
-branch (possibly from an external
-repository) into the current branch.  In the
-case where the merged-in branch is from a different repository,
-this is done by first fetching the remote branch
-and then merging the result into the current branch.  This
-combination of fetch and merge operations is called a
-pull.  Merging is performed by an automatic process
-that identifies changes made since the branches diverged, and
-then applies all those changes together.  In cases where changes
-conflict, manual intervention may be required to complete the
-merge.
+> Como verbo: Contruir o conteúdo de outro branch (possivelmente de um 
+repositório externo) no branch atual. No caso onde o merge de entrada for de um 
+repositório diferente, ele pode ser feito primeiramente recuperando o branch 
+remoto e então realizando um merge com o resultado no branch atual. Essa
+combinação de operações de fetch e merge é chamado de "pull". Um merge é 
+realizado através de um processo automático que identifica mudanças feitas desde 
+as divergências dos branches, e então aplica todas essas alterações juntas. Nos
+caso onde as alterações conflitam, uma intervenção manual pode ser requisitada
+para completar o merge.
 
-> As a noun: unless it is a fast forward, a
-successful merge results in the creation of a new commit
-representing the result of the merge, and having as
-parents the tips of the merged branches.
-This commit is referred to as a "merge commit", or sometimes just a
-"merge".
+> Como um substantivo: a não ser que seja um "fast forward", o resultado de um 
+merge completo na criação de um novo commit representando o resultado do merge, 
+e tendo como pais os topos dos branches que realizaram merge. Esse commit é 
+referenciado como um "merge commit", ou as vezes só como "merge".
 
 _object_
 
@@ -290,12 +279,10 @@ inteligente.
 
 _origin_
 
-> The default upstream repository. Most projects have
-at least one upstream project which they track. By default
-'origin' is used for that purpose. New upstream updates
-will be fetched into remote tracking branches named
-origin/name-of-upstream-branch, which you can see using
-"`git branch -r`".
+> O padrão para repositórios remotos. A maioria dos projetos tem pelo menos um 
+projeto no qual eles acompanham. Por padrão 'origin' é usado para esse propósito.
+Novas atualizações neles serão recuperados para os branches nomeados como 
+origin/nome-do-branch-remoto, que pode ser visto usando `git branch -r`.
 
 _pack_
 
@@ -304,15 +291,13 @@ economizar espaço ou transmiti-los com eficiência).
 
 _pack index_
 
-> The list of identifiers, and other information, of the objects in a
-pack, to assist in efficiently accessing the contents of a
-pack.
+> Uma lista de identificadores, e outras informações, dos objetos em um pack, 
+para eficientemente ajudar no acesso do conteúdo de um pack.
 
 _parent_
 
-> A commit object contains a (possibly empty) list
-of the logical predecessor(s) in the line of development, i.e. its
-parents.
+> Um objeto commit que contém uma (possivelmente vazia) lista de predecessores 
+lógicos em uma linha de desenvolvimento, como exemplo seus pais.
 
 _pickaxe_
 
@@ -324,7 +309,7 @@ particular line of text. See linkgit:git-diff[1].
 
 _plumbing_
 
-> Cute name for core git.
+> Nome mais atraente para "core git".
 
 _porcelain_
 
