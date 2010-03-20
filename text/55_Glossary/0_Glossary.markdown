@@ -153,7 +153,7 @@ _fetch_
 
 > Realizar um fetch significa conseguir o head do branch do repositório remoto,
 procurar quais objetos estão faltando no banco de dados do repositório local, e
-recupera-los. Veja também: linkgit:git-fetch[1].
+recupera-los. Veja também: `linkgit:git-fetch[1]`.
 
 _file system_
 
@@ -305,7 +305,7 @@ _pickaxe_
 routines that help select changes that add or delete a given text
 string. With the `--pickaxe-all` option, it can be used to view the full
 changeset that introduced or removed, say, a
-particular line of text. See linkgit:git-diff[1].
+particular line of text. See `linkgit:git-diff[1]`.
 
 _plumbing_
 
@@ -321,7 +321,7 @@ interface than the plumbing.
 _pull_
 
 > Pulling um branch significa recuperá-lo e realizar um merge nele.
-Veja também linkgit:git-pull[1].
+Veja também `linkgit:git-pull[1]`.
 
 _push_
 
@@ -360,10 +360,10 @@ denota um objeto particular. Esses podem ser armazenados em
 
 _reflog_
 
-> A reflog shows the local "history" of a ref.  In other words,
-it can tell you what the 3rd last revision in _this_ repository
-was, and what was the current state in _this_ repository,
-yesterday 9:14pm.  See linkgit:git-reflog[1] for details.
+> Um `reflog` mostra um "histórico" local de `ref`. Em outras palavras, ele pode
+dizer a você que a terceira última revisão _nesse_ repositório foi, e qual foi
+o estado atual _nesse_ repositório, ontem às 09:14pm. Veja `linkgit:git-reflog[1]` 
+para mais detalhes.
 
 _refspec_
 
@@ -399,8 +399,7 @@ Ele é referenciado por um objeto commit.
 
 _rewind_
 
-> To throw away part of the development, i.e. to assign the
-head to an earlier revision.
+> Descartar parte do desenvolvimento. Ex.: atribuir o head para uma revisão anterior.
 
 _SCM_
 
@@ -424,23 +423,18 @@ its history can be later deepened with linkgit:git-fetch[1].
 
 _symref_
 
-> Symbolic reference: instead of containing the SHA1
-id itself, it is of the format 'ref: refs/some/thing' and when
-referenced, it recursively dereferences to this reference.
-'HEAD' is a prime example of a symref. Symbolic
-references are manipulated with the linkgit:git-symbolic-ref[1]
-command.
+> Referência Simbólica: ao invés de conter uma identificação SHA1 por ele mesmo, 
+ele está no formato 'ref: refs/alguma/coisa' e quando referenciado, ele recursivamente
+desreferencia para essa referência.
+'HEAD' é um ótimo exemplo de um `symref`. Referências simbólicas são manipuladas com 
+o comando `linkgit:git-symbolic-ref[1]`.
 
 _tag_
 
-> A ref pointing to a tag or
-commit object. In contrast to a head,
-a tag is not changed by a commit. Tags (not
-tag objects) are stored in `$GIT_DIR/refs/tags/`. A
-git tag has nothing to do with a Lisp tag (which would be
-called an object type in git's context). A
-tag is most typically used to mark a particular point in the
-commit ancestry chain.
+> Uma `ref` apontando para um objeto tag ou commit. Diferente do head, uma tag não 
+é alterável por um commit. Tags (não objetos tag) são armazenados em `$GIT_DIR/refs/tags/`.
+Uma tag é mais comumente usado para marcar um ponto particular de um commit dentro
+do projeto.
 
 _tag object_
 
@@ -450,20 +444,16 @@ nesse caso ele é chamado de "objeto tag assinado".
 
 _topic branch_
 
-> A regular git branch that is used by a developer to
-identify a conceptual line of development. Since branches are very easy
-and inexpensive, it is often desirable to have several small branches
-that each contain very well defined concepts or small incremental yet
-related changes.
+> Um branch git comum que é usado pelo desenvolvedor para identificar uma linha 
+de desenvolvimento conceitual. Como os branches são fáceis e simples, são muitas vezes
+desejáveis terem diversos pequenos branches onde cada um contém conceitos bem definidos 
+ou ainda pequenas mudanças relacionadas.
 
 _tracking branch_
 
-> A regular git branch that is used to follow changes from
-another repository. A tracking
-branch should not contain direct modifications or have local commits
-made to it. A tracking branch can usually be
-identified as the right-hand-side ref in a Pull:
-refspec.
+> Um branch comum que é usado para seguir as modificações de outro repositório. Um 
+tracking branch não deveria conter modificações diretas ou ter commits locais 
+feitos nele.
 
 _tree_
 
@@ -478,8 +468,8 @@ Uma tree é equivalente a um diretório.
 
 _tree-ish_
 
-> A ref pointing to either a commit object, a tree object, or a tag
-object pointing to a tag or commit or tree object.
+> Uma referência para qualquer um objeto commit, objeto tree, ou um objeto tag, 
+apontando para um objeto tag ou commit ou tree.
 
 _unmerged index_
 
@@ -492,7 +482,5 @@ ou qualquer outra referência.
 
 _working tree_
 
-> The tree of actual checked out files.  The working tree is
-normally equal to the HEAD plus any local changes
-that you have made but not yet committed.
->>>>>>> master:text/55_Glossary/0_Glossary.markdown
+> Uma árvore de trabalho com os arquivos do projeto corrente. Ele é normalmente equivalente ao HEAD
+mais qualquer alterações locais que você tenha feito mas não foi realizado commit.
