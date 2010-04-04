@@ -16,7 +16,8 @@ line in the file.
 	8e440259 (Peter Eriksen   2006-04-02 14:44:09 +0200   14) #include "tag.h"
 	8e440259 (Peter Eriksen   2006-04-02 14:44:09 +0200   15) #include "tree.h"
 	f35a6d3b (Linus Torvalds  2007-04-09 21:20:29 -0700   16) #include "refs.h"
-	70f5d5d3 (Nicolas Pitre   2008-02-28 00:25:19 -0500   17) #include "pack-revindex.h"628522ec (Junio C Hamano              2007-12-29 02:05:47 -0800   18) #include "sha1-lookup.h"
+	70f5d5d3 (Nicolas Pitre   2008-02-28 00:25:19 -0500   17) #include "pack-revindex.h"
+	628522ec (Junio C Hamano  2007-12-29 02:05:47 -0800   18) #include "sha1-lookup.h"
 	...
 	
 This is often helpful if a file had a line reverted or a mistake that broke 
