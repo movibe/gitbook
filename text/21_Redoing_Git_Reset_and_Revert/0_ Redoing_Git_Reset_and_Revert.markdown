@@ -43,7 +43,11 @@ fundamentally different ways to fix the problem:
     never do this if you have already made the history public;
     git does not normally expect the "history" of a project to
     change, and cannot correctly perform repeated merges from
-    a branch that has had its history changed.
+    a branch that has had its history changed. If you do re-write
+    a repositories history anyone else who has cloned the
+    repository will need manually correct the problem on their
+    clone see the "RECOVERING FROM UPSTREAM REBASE" section
+    in linkgit:git-rebase[1].
 
 #### Fixing a mistake with a new commit ####
 
