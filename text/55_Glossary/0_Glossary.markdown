@@ -1,24 +1,24 @@
 ## Glossário ##
 
-Aqui nós temos o significado de alguns termos usados dentro do contexto do Git.  
+Aqui nós temos o significado de alguns termos usados dentro do contexto do Git.
 Esses termos foram retirados do
-[Git Glossary](http://www.kernel.org/pub/software/scm/git/docs/gitglossary.html).  
+[Git Glossary](http://www.kernel.org/pub/software/scm/git/docs/gitglossary.html).
 
 
 _alternate object database_
 
-> Através de mecanismos alternativos, um repositório pode herdar parte de seus 
-objetos do banco de dados de outro banco de dados de objetos, que é chamado de 
-"alternate". 
+> Através de mecanismos alternativos, um repositório pode herdar parte de seus
+objetos do banco de dados de outro banco de dados de objetos, que é chamado de
+"alternate".
 
 _bare repository_
 
-> Um repositório bare é normalmente um nome apropriado para um diretório com um 
-sufixo `.git` que não possui um cópia (checkout) local de qualquer arquivo sobre 
-o controle de revisão. Então, todos os arquivos administrativos e de controle do 
+> Um repositório bare é normalmente um nome apropriado para um diretório com um
+sufixo `.git` que não possui um cópia (checkout) local de qualquer arquivo sobre
+o controle de revisão. Então, todos os arquivos administrativos e de controle do
 `git` que normalmente estariam no sub-diretório escondido `.git` estão presentes
 diretamente no diretório `repository.git` por exemplo, e nenhum outro arquivo
-presente ou checkout. Normalmente publicadores de repositórios públicos tornam 
+presente ou checkout. Normalmente publicadores de repositórios públicos tornam
 diretórios bare disponíveis.
 
 _objeto blob_
@@ -39,15 +39,15 @@ _cache_
 > Termo obsoleto para: index.
 
 _chain_
-    
-> Uma lista de objetos, onde cada objeto em uma lista contém a referência para 
+
+> Uma lista de objetos, onde cada objeto em uma lista contém a referência para
 o seu sucessor (por exemplo, o sucessor de um commit poderia ser um dos seus
 pais).
 
 _changeset_
 
-> Forma como BitKeeper/cvsps chama um "commit". Uma vez que o git não armazena 
-mudanças, mas estados, realmente não faz sentido usar o termo "changesets" com 
+> Forma como BitKeeper/cvsps chama um "commit". Uma vez que o git não armazena
+mudanças, mas estados, realmente não faz sentido usar o termo "changesets" com
 o git.
 
 _checkout_
@@ -62,8 +62,8 @@ para um novo branch.
 _cherry-picking_
 
 > No jargão do SCM, "cherry pick" significa escolher um subconjunto de modificações
-fora da série de modificações (tipicamente commits) e gravá-las como um nova 
-série de mudanças no início de um base de código diferente. No GIT, ele é 
+fora da série de modificações (tipicamente commits) e gravá-las como um nova
+série de mudanças no início de um base de código diferente. No GIT, ele é
 realizado pelo comando `git cherry-pick` para extrair as modificações introduzidas
 por commit existente e gravá-las baseadas no início do branch atual como um novo
 commit.
@@ -71,18 +71,18 @@ commit.
 _clean_
 
 > Um diretório de trabalho está limpo, se ele corresponde a revisão referenciada
-pelo head atual. Veja também "dirty". 
+pelo head atual. Veja também "dirty".
 
 _commit_
 
-> Como um substantivo: Um simples ponto no histórico do git; o histórico completo 
-do projeto é representado como um conjunto de commits inter-relacionados. A 
+> Como um substantivo: Um simples ponto no histórico do git; o histórico completo
+do projeto é representado como um conjunto de commits inter-relacionados. A
 palavra "commit" é frequentemente usada pelo git nos mesmos locais onde outros
 sistemas de controle de revisão usam as palavras "revisão" or "versão". Também
 usado como atalho para um objeto tipo commit.
 
-> Como um verbo: A ação de armazenar um novo "ponto" do estado do projeto no 
-histórico do git, através da criação de um novo commit representando o estado 
+> Como um verbo: A ação de armazenar um novo "ponto" do estado do projeto no
+histórico do git, através da criação de um novo commit representando o estado
 atual do index e avançando o HEAD para o ponto do novo commit.
 
 _objeto commit_
@@ -101,8 +101,8 @@ ferramentas de gerenciamento de código fonte.
 _DAG_
 
 > Gráfico acíclico direcionado. Os objetos commits formam um gráfico acíclico
-direcionado, por que eles tem pais (direcionados), e o gráfico dos objetos 
-commit é acíclico (existe nenhuma corrente que inicia e termina com o mesmo 
+direcionado, por que eles tem pais (direcionados), e o gráfico dos objetos
+commit é acíclico (existe nenhuma corrente que inicia e termina com o mesmo
 objeto).
 
 _dangling object_
@@ -114,7 +114,7 @@ ou objeto no repositório.
 _detached HEAD_
 
 > Normalmente o HEAD armazena o nome de um branch. Contudo, git também permite
-você realizar um checkout de um commit arbitrário que não é necessariamente o 
+você realizar um checkout de um commit arbitrário que não é necessariamente o
 topo de um branch particular. Nesse caso o HEAD é dito como ser "isolado".
 
 _dircache_
@@ -127,7 +127,7 @@ _directory_
 
 _dirty_
 
-> Um diretório de trabalho é dito estar "sujo" se ele contém modificações que 
+> Um diretório de trabalho é dito estar "sujo" se ele contém modificações que
 não tem sido commitados no branch atual.
 
 _ent_
@@ -145,8 +145,8 @@ _fast forward_
 
 > Um "fast-forward" é um tipo especial de merge onde você tem uma revisão e
 realiza um merge com as modificações de outro branch que é descendente daquele que
-você já tem. Muitas vezes nesse caso, você não faz um novo merge, mas ao invés 
-disso só atualiza a sua revisão. Isso acontece frequentemente sobre um branch em 
+você já tem. Muitas vezes nesse caso, você não faz um novo merge, mas ao invés
+disso só atualiza a sua revisão. Isso acontece frequentemente sobre um branch em
 um repositório remoto.
 
 _fetch_
@@ -157,8 +157,8 @@ recupera-los. Veja também: `linkgit:git-fetch[1]`.
 
 _file system_
 
-> Linus Torvalds originalmente projetou o git para ser um sistema de arquivos no 
-espaço do usuário, exemplo da estrutura que mantém arquivos e diretórios. Que 
+> Linus Torvalds originalmente projetou o git para ser um sistema de arquivos no
+espaço do usuário, exemplo da estrutura que mantém arquivos e diretórios. Que
 garante a eficiência e velocidade do git.
 
 _git archive_
@@ -167,10 +167,10 @@ _git archive_
 
 _grafts_
 
-> Grafts habilitam duas outras linhas de desenvolvimento diferentes 
-para serem unidas juntas através da gravação de informações ancestrais falsas 
-para os commits. Dessa forma você pode fazer git fingir o conjunto de pais que 
-o commit possui sendo diferente daquele que foi gravado quando o commit foi 
+> Grafts habilitam duas outras linhas de desenvolvimento diferentes
+para serem unidas juntas através da gravação de informações ancestrais falsas
+para os commits. Dessa forma você pode fazer git fingir o conjunto de pais que
+o commit possui sendo diferente daquele que foi gravado quando o commit foi
 criado. Configurado no arquivo `.git/info/grafts`.
 
 _hash_
@@ -180,14 +180,14 @@ _hash_
 _head_
 
 > Uma referência nomeada para o commit no topo do branch. Heads são armazenados
-em `$GIT_DIR/refs/heads/`, exceto quando está usando `refs` comprimidos. (Veja 
+em `$GIT_DIR/refs/heads/`, exceto quando está usando `refs` comprimidos. (Veja
 linkgit:git-pack-refs[1].)
 
 _HEAD_
 
 > O branch atual. Em mais detalhes: Sua árvore de trabalho é normalmente
 derivado do estado da árvore referida pelo HEAD. HEAD é uma referência para um
-dos heads em seu repositório, exceto quando está usando um HEAD desacoplado, que 
+dos heads em seu repositório, exceto quando está usando um HEAD desacoplado, que
 nesse caso ele pode referenciar um commit arbitrário.
 
 _head ref_
@@ -196,12 +196,12 @@ _head ref_
 
 _hook_
 
-> Durante a execução normal de diversos comandos git, chamadas são feitas para 
-scripts opcionais que permitem o desenvolvedor adicionar ou verificar 
-funcionalidades. Tipicamente, os hooks permitem um comando ser 
-pré-verificado e potencialmente abortado, e permitir que uma notificação seja 
-lançada depois que a operação tenha sido feita. Os scripts são encontrados no 
-diretório `$GIT_DIR/hooks/`, e são habilitados através da simples remoção do 
+> Durante a execução normal de diversos comandos git, chamadas são feitas para
+scripts opcionais que permitem o desenvolvedor adicionar ou verificar
+funcionalidades. Tipicamente, os hooks permitem um comando ser
+pré-verificado e potencialmente abortado, e permitir que uma notificação seja
+lançada depois que a operação tenha sido feita. Os scripts são encontrados no
+diretório `$GIT_DIR/hooks/`, e são habilitados através da simples remoção do
 sufixo `.sample` nos nomes dos arquivos. Em versão mais antigas do git você tinha
 que torná-los executáveis.
 
@@ -215,45 +215,45 @@ quando realizam algum merge.
 
 _index entry_
 
-> Uma informação relativa a um arquivo particular, armazenado no index. Uma 
-entrada no index pode estar "umerged", se um merge foi iniciado, mas ainda não 
+> Uma informação relativa a um arquivo particular, armazenado no index. Uma
+entrada no index pode estar "umerged", se um merge foi iniciado, mas ainda não
 finalizado (ex.: se o index contém múltiplas versões daquele arquivo).
 
 _master_
 
 > O branch padrão de desenvolvimento.
-Sempre que você cria um repositório git, 
+Sempre que você cria um repositório git,
 um branch nomeado de "master" é criado, e se torna o branch ativo.
 Na maioria dos casos, ele contém os arquivos de desenvolvimento local,
 embora ele seja uma convenção e não seja necessário.
 
 _merge_
 
-> Como verbo: Contruir o conteúdo de outro branch (possivelmente de um 
-repositório externo) no branch atual. No caso onde o merge de entrada for de um 
-repositório diferente, ele pode ser feito primeiramente recuperando o branch 
+> Como verbo: Contruir o conteúdo de outro branch (possivelmente de um
+repositório externo) no branch atual. No caso onde o merge de entrada for de um
+repositório diferente, ele pode ser feito primeiramente recuperando o branch
 remoto e então realizando um merge com o resultado no branch atual. Essa
-combinação de operações de fetch e merge é chamado de "pull". Um merge é 
-realizado através de um processo automático que identifica mudanças feitas desde 
+combinação de operações de fetch e merge é chamado de "pull". Um merge é
+realizado através de um processo automático que identifica mudanças feitas desde
 as divergências dos branches, e então aplica todas essas alterações juntas. Nos
 caso onde as alterações conflitam, uma intervenção manual pode ser requisitada
 para completar o merge.
 
-> Como um substantivo: a não ser que seja um "fast forward", o resultado de um 
-merge completo na criação de um novo commit representando o resultado do merge, 
-e tendo como pais os topos dos branches que realizaram merge. Esse commit é 
+> Como um substantivo: a não ser que seja um "fast forward", o resultado de um
+merge completo na criação de um novo commit representando o resultado do merge,
+e tendo como pais os topos dos branches que realizaram merge. Esse commit é
 referenciado como um "merge commit", ou as vezes só como "merge".
 
 _object_
 
-> A unidade de armazenamento no git. Ele é unicamente identificado pelo 
+> A unidade de armazenamento no git. Ele é unicamente identificado pelo
 SHA1 de seu conteúdo. Consequentemente, um
 objeto não pode ser modificado.
 
 _banco de dados de objetos_
 
 > Armazena um conjunto de "objetos", e um objeto individual é identificado por
-seu nome de objeto. Os objetos normalmente 
+seu nome de objeto. Os objetos normalmente
 ficam em `$GIT_DIR/objects/`.
 
 _identificador do objeto_
@@ -262,8 +262,8 @@ _identificador do objeto_
 
 _nome do objeto_
 
-> O único identificador de um objeto. O hash do conteúdo de um objeto 
-usa o "Secure Hash Algorithm 1" e normalmente 
+> O único identificador de um objeto. O hash do conteúdo de um objeto
+usa o "Secure Hash Algorithm 1" e normalmente
 é representado por uma codificação
 de 40 caracteres hexadecimais do hash de um objeto.
 
@@ -274,14 +274,14 @@ de um objeto.
 
 _octopus_
 
-> Para realizar um merge com mais de dois branches. Também denota um predador 
+> Para realizar um merge com mais de dois branches. Também denota um predador
 inteligente.
 
 _origin_
 
-> O padrão para repositórios remotos. A maioria dos projetos tem pelo menos um 
+> O padrão para repositórios remotos. A maioria dos projetos tem pelo menos um
 projeto no qual eles acompanham. Por padrão 'origin' é usado para esse propósito.
-Novas atualizações neles serão recuperados para os branches nomeados como 
+Novas atualizações neles serão recuperados para os branches nomeados como
 origin/nome-do-branch-remoto, que pode ser visto usando `git branch -r`.
 
 _pack_
@@ -291,12 +291,12 @@ economizar espaço ou transmiti-los com eficiência).
 
 _pack index_
 
-> Uma lista de identificadores, e outras informações, dos objetos em um pack, 
+> Uma lista de identificadores, e outras informações, dos objetos em um pack,
 para eficientemente ajudar no acesso do conteúdo de um pack.
 
 _parent_
 
-> Um objeto commit que contém uma (possivelmente vazia) lista de predecessores 
+> Um objeto commit que contém uma (possivelmente vazia) lista de predecessores
 lógicos em uma linha de desenvolvimento, como exemplo seus pais.
 
 _pickaxe_
@@ -349,12 +349,12 @@ that they contain.
 
 _rebase_
 
-> Para reaplicar uma série de mudanças de um branch para uma diferente base, e 
+> Para reaplicar uma série de mudanças de um branch para uma diferente base, e
 resetar o `head` desse branch para o resultado.
 
 _ref_
 
-> Uma representação hexadecimal de 40 bytes de um SHA1 ou um nome que 
+> Uma representação hexadecimal de 40 bytes de um SHA1 ou um nome que
 denota um objeto particular. Esses podem ser armazenados em
 `$GIT_DIR/refs/`.
 
@@ -362,7 +362,7 @@ _reflog_
 
 > Um `reflog` mostra um "histórico" local de `ref`. Em outras palavras, ele pode
 dizer a você que a terceira última revisão _nesse_ repositório foi, e qual foi
-o estado atual _nesse_ repositório, ontem às 09:14pm. Veja `linkgit:git-reflog[1]` 
+o estado atual _nesse_ repositório, ontem às 09:14pm. Veja `linkgit:git-reflog[1]`
 para mais detalhes.
 
 _refspec_
@@ -394,7 +394,7 @@ causou.
 _revision_
 
 > Um estado particular dos arquivos e diretórios no qual estão armazenados no
-banco de dados de objetos. 
+banco de dados de objetos.
 Ele é referenciado por um objeto commit.
 
 _rewind_
@@ -423,15 +423,15 @@ its history can be later deepened with linkgit:git-fetch[1].
 
 _symref_
 
-> Referência Simbólica: ao invés de conter uma identificação SHA1 por ele mesmo, 
+> Referência Simbólica: ao invés de conter uma identificação SHA1 por ele mesmo,
 ele está no formato 'ref: refs/alguma/coisa' e quando referenciado, ele recursivamente
 desreferencia para essa referência.
-'HEAD' é um ótimo exemplo de um `symref`. Referências simbólicas são manipuladas com 
+'HEAD' é um ótimo exemplo de um `symref`. Referências simbólicas são manipuladas com
 o comando `linkgit:git-symbolic-ref[1]`.
 
 _tag_
 
-> Uma `ref` apontando para um objeto tag ou commit. Diferente do head, uma tag não 
+> Uma `ref` apontando para um objeto tag ou commit. Diferente do head, uma tag não
 é alterável por um commit. Tags (não objetos tag) são armazenados em `$GIT_DIR/refs/tags/`.
 Uma tag é mais comumente usado para marcar um ponto particular de um commit dentro
 do projeto.
@@ -444,15 +444,15 @@ nesse caso ele é chamado de "objeto tag assinado".
 
 _topic branch_
 
-> Um branch git comum que é usado pelo desenvolvedor para identificar uma linha 
+> Um branch git comum que é usado pelo desenvolvedor para identificar uma linha
 de desenvolvimento conceitual. Como os branches são fáceis e simples, são muitas vezes
-desejáveis terem diversos pequenos branches onde cada um contém conceitos bem definidos 
+desejáveis terem diversos pequenos branches onde cada um contém conceitos bem definidos
 ou ainda pequenas mudanças relacionadas.
 
 _tracking branch_
 
-> Um branch comum que é usado para seguir as modificações de outro repositório. Um 
-tracking branch não deveria conter modificações diretas ou ter commits locais 
+> Um branch comum que é usado para seguir as modificações de outro repositório. Um
+tracking branch não deveria conter modificações diretas ou ter commits locais
 feitos nele.
 
 _tree_
@@ -468,7 +468,7 @@ Uma tree é equivalente a um diretório.
 
 _tree-ish_
 
-> Uma referência para qualquer um objeto commit, objeto tree, ou um objeto tag, 
+> Uma referência para qualquer um objeto commit, objeto tree, ou um objeto tag,
 apontando para um objeto tag ou commit ou tree.
 
 _unmerged index_

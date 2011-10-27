@@ -54,7 +54,7 @@ que você pode estar familiarizado. Subversion, CVS, Perforce, Mercurial e como
 todos eles usam sistemas _Delta Storage_ - como eles armazenam as diferenças
 entre um commit e o próximo. Git não faz isso - ele armazena um snapshot de
 todos os arquivos de seu projeto como eram nessa estrutura em árvore no momento
-de cada commit, é claro que isso não significará (necessariamente) que seu 
+de cada commit, é claro que isso não significará (necessariamente) que seu
 histórico do repositório atingirá um tamanho enorme. Usando "git gc", o Git fará
-alguma limpeza interna, incluindo compressão de arquivos de revisão. Esse é um 
+alguma limpeza interna, incluindo compressão de arquivos de revisão. Esse é um
 conceito muito importante para entender quando estiver usando Git.

@@ -2,7 +2,7 @@
 
 ### Conseguindo ajuda na resolução de conflitos durante o merge ###
 
-Todas as alterações que o merge foi capaz de realizar automaticamente já estão 
+Todas as alterações que o merge foi capaz de realizar automaticamente já estão
 adicionadas no arquivo index, então linkgit:git-diff[1] mostrará
 somente os conflitos. Ele usa uma sintaxe incomum:
 
@@ -25,9 +25,9 @@ será a ponta do outro branch, que é armazenado temporariamente no MERGE_HEAD.
 Durante o merge, o index retém três versões de cada arquivo. Cada um desses
 três "estágios do arquivo" representam uma versão diferente do arquivo:
 
-	$ git show :1:file.txt	# o arquivo é o ancestral comum de ambos os branches
-	$ git show :2:file.txt	# a versão do HEAD.
-	$ git show :3:file.txt	# a versão do MERGE_HEAD.
+    $ git show :1:file.txt  # o arquivo é o ancestral comum de ambos os branches
+    $ git show :2:file.txt  # a versão do HEAD.
+    $ git show :3:file.txt  # a versão do MERGE_HEAD.
 
 Quando você pergunta ao linkgit:git-diff[1] para mostrar os conflitos, ele
 executa um diff de três-passos entre os resultados do merge conflitantes na
@@ -54,7 +54,7 @@ index), o diff se parecerá com isso:
     +++ b/file.txt
     @@@ -1,1 -1,1 +1,1 @@@
     - Hello world
-    -Goodbye
+     -Goodbye
     ++Goodbye world
 
 Isso mostra que nossa versão corrigida apagou "Hello world" do primeiro
@@ -64,12 +64,12 @@ ausente de ambos anteriormente.
 Algumas opções especiais do diff permitem diferenciar o diretório de trabalho
 contra qualquer estágio:
 
-    $ git diff -1 file.txt		# diff contra o estágio 1
-    $ git diff --base file.txt	# mesmo como acima
-    $ git diff -2 file.txt		# diff contra o estágio 2
-    $ git diff --ours file.txt	# mesmo como acima
-    $ git diff -3 file.txt		# diff contra o estágio 3
-    $ git diff --theirs file.txt	# mesmo como acima
+    $ git diff -1 file.txt      # diff contra o estágio 1
+    $ git diff --base file.txt  # mesmo como acima
+    $ git diff -2 file.txt      # diff contra o estágio 2
+    $ git diff --ours file.txt  # mesmo como acima
+    $ git diff -3 file.txt      # diff contra o estágio 3
+    $ git diff --theirs file.txt    # mesmo como acima
 
 Os comandos linkgit:git-log[1] e linkgit:gitk[1] também provêm ajuda especial
 para merges:
@@ -87,5 +87,5 @@ Cada vez que você resolve os conflitos dentro do arquivo e atualiza o index:
 
     $ git add file.txt
 
-os diferentes estágios daquele arquivo serão "collapsed", depois que git-diff
-não mostrar (por padrão) diferenças para aquele arquivo.
+os diferentes estágios daquele arquivo serão "collapsed", depois disso git-diff
+não mostrará (por padrão) diferenças para aquele arquivo.

@@ -1,14 +1,14 @@
 ﻿## Desfazendo no Git - Reset, Checkout e Revert ##
 
 Git provê múltiplos métodos para corrigir erros quando você está desenvolvendo.
-Selecionar um método apropriado depende se possui ou não erros nos 
+Selecionar um método apropriado depende se possui ou não erros nos
 commits já realizados, se você realizou commits com erros, e se você compartilhou
 os commits com problemas com alguém.
 
 ### Corrigindo erros que ainda não foram para o commit ###
 
 Se você cometeu erros na sua árvore de trabalho, mas ainda não fez o commit
-desses erros, você pode retornar a árvore de trabalho inteira para o estado do 
+desses erros, você pode retornar a árvore de trabalho inteira para o estado do
 último commit com:
 
     $ git reset --hard HEAD
@@ -42,7 +42,10 @@ fundamentalmente diferentes para resolver o problema:
 2. Você pode voltar e modificar o commit antigo. Você nunca deveria fazer
     isso se você já tornou o histórico público; git normalmente não espera
     que o "histórico" de um projeto mude, e não pode realizar corretamente
-    merges repetidos de um branch que possue o histórico alterado.
+    merges repetidos de um branch que possue o histórico alterado. Se
+    você reescrever o histórico do repositório, qualquer pessoa que clonou
+    o repositório terá que manualmente corrigir o problema em sua cópia,
+    veja a seção "RECUPERANDO DE UM REBASE REMOTO" em linkgit:git-rebase[1].
 
 
 #### Corrigindo um erro com um novo commit ####
@@ -68,7 +71,7 @@ para corrigir manualmente os conflitos, bem na hora da resolução do merge.
 
 #### Corrigindo um erro através da modificação de um commit ####
 
-Se você já realizou o commit de algo mas percebe que precisa consertá-lo, 
+Se você já realizou o commit de algo mas percebe que precisa consertá-lo,
 versões recentes do linkgit:git-commit[1] suporta uma flag **--amend** que instrui
 o git para substituir o commit HEAD com um novo, baseado no conteúdo atual do
 index. Isso dá a você uma oportunidade para adicionar arquivos que você

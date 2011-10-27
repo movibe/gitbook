@@ -7,7 +7,7 @@ atual de seu trabalho, e depois corrigir o erro (ou, opcionalmente depois de
 fazê-lo sobre um branch diferente e então voltar), e recuperar as alterações 
 que estava trabalhando antes do erro.
 
-    $ git stash "work in progress for foo feature"
+    $ git stash save "work in progress for foo feature"
 
 Esse comando gravará suas alterações para o `stash` e resetará sua árvore de
 trabalho e o index para o início de seu branch atual. Você então pode fazer
