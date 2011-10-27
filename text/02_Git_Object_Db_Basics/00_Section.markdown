@@ -1,0 +1,1 @@
+﻿# O básico sobre os objetos no git

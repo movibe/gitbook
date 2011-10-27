@@ -52,10 +52,10 @@ e enviar um pull-request quando fizer alguma alteração.
 
 ### Créditos e Colaboradores na versão Brasileira ###
 
-Aqui a lista de colaboradores que ajudaram/ajudam no desenvolvimento desta versão.  
+Aqui a lista de colaboradores que ajudaram/ajudam no desenvolvimento desta versão.
 
-* Djalma Oliveira [djalmaoliveira@gmail.com](mailto:djalmaoliveira@gmail.com) no Github [http://github.com/djalmaoliveira/gitbook](http://github.com/djalmaoliveira/gitbook).  
-* Enderson Maia [endersonmaia@gmail.com](mailto:endersonmaia@gmail.com)  no Github [http://github.com/enderson/gitbook](http://github.com/enderson/gitbook).  
+* Djalma Oliveira [djalmaoliveira@gmail.com](mailto:djalmaoliveira@gmail.com) no Github [http://github.com/djalmaoliveira/gitbook](http://github.com/djalmaoliveira/gitbook).
+* Enderson Maia [endersonmaia@gmail.com](mailto:endersonmaia@gmail.com)  no Github [http://github.com/enderson/gitbook](http://github.com/enderson/gitbook).
 
 
 ### Referências ###
@@ -68,3 +68,4 @@ favor visite eles e agradeça os autores.
 * [The Git Tutorial](http://www.kernel.org/pub/software/scm/git/docs/gittutorial.html)
 * [The Git Tutorial pt 2](http://www.kernel.org/pub/software/scm/git/docs/gittutorial-2.html)
 * ["My Git Workflow" blog post](http://osteele.com/archives/2008/05/my-git-workflow)
+
